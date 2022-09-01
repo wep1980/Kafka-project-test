@@ -11,7 +11,7 @@ import org.springframework.kafka.config.TopicBuilder;
 import org.springframework.kafka.core.KafkaAdmin;
 
 @Configuration
-public class KafkaConfig {
+public class KafkaAdminConfig {
 	
 	
 	@Autowired
