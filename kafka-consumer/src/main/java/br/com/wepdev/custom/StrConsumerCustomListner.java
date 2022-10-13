@@ -22,4 +22,7 @@ public @interface StrConsumerCustomListner {
 
 	@AliasFor(annotation = KafkaListener.class, attribute = "groupId") // Decorar atributos dentro de uma unica anotação
 	String groupId() default ""; // O default sera definido por nos mesmo
+	
+	@AliasFor(annotation = KafkaListener.class, attribute = "errorHandler") // Decorar atributos dentro de uma unica anotação
+	String errorHandler() default "errorCustomHandler";
 }
